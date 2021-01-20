@@ -7,6 +7,9 @@ import { NavbarBrand } from "react-bootstrap";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import Nav from "react-bootstrap/Nav";
+
+import Footer from "./components/Footer";
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -58,6 +61,7 @@ export default class App extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
+          <Footer />
         </Container>
       </Router>
     );
