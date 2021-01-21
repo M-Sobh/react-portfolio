@@ -23,9 +23,9 @@ export default class App extends Component {
         { title: "contact", path: "/contact" }
       ],
       home: {
-        title: "Be relentless",
-        subTitle: "Projects that make a difference",
-        text: "Checkout my projects"
+        title: "Be Persistent",
+        subTitle: "Projects that make difference",
+        text: "Check out my projects"
       },
       about: {
         title: "About me"
