@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
+import bckg from "./assets/images/bckg.jpeg";
 
 export default class App extends Component {
   constructor(props) {
@@ -41,7 +42,15 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid={true}>
+        <Container
+          className="p-0 bkg"
+          fluid={true}
+          style={{
+            backgroundImage: `url(${bckg})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat"
+          }}
+        >
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Mohamed Sobh</Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />

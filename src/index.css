@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,6 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
 }
 
 code {
@@ -31,4 +37,11 @@ code {
 .g-card-sub-title {
   font-size: 16px;
   margin: 0px;
+}
+
+.bkg {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
 }
