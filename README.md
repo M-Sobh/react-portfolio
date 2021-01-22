@@ -7,3 +7,11 @@
 # step 3 creating pages components (Routing)
 
 # step 4 creating hero section
+
+# step 5 creating carousel
+
+# step 6 creating projects cards
+
+# step 7 creating about page
+
+# step 8 creating contact page

@@ -35,7 +35,7 @@ export default class App extends Component {
         title: "Projects"
       },
       contact: {
-        title: "Contact me"
+        title: "Let's talk"
       }
     };
   }
