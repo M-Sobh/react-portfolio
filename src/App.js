@@ -10,7 +10,8 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
-import bckg from "./assets/images/bckg.jpeg";
+import logo from "./assets/images/logo.jpeg";
+import Switch from "react-bootstrap/esm/Switch";
 
 export default class App extends Component {
   constructor(props) {
@@ -42,63 +43,85 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <Container
-          className="p-0 bkg"
-          fluid={true}
-          // style={{
-          //   backgroundImage: `url(${bckg})`,
-          //   backgroundSize: "cover",
-          //   backgroundRepeat: "no-repeat"
-          // }}
-        >
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>Mohamed Sobh</Navbar.Brand>
+        <Container className="p-0" fluid={true}>
+          <Navbar
+            className="border-bottom"
+            bg="dark"
+            variant="dark"
+            expand="lg"
+          >
+            <Navbar.Brand>
+              <img
+                alt="logo"
+                src={logo}
+                width="60"
+                height="50"
+                className="d-inline-block align-top"
+              />
+            </Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
-              <Nav className="ml-auto">
-                <Link className="nav-link" to="/">
+              <Nav className="ml-auto" variant="tabs" defaultActiveKey="/home">
+                <Link className="nav-link" to="/" style={{ color: "#ff7552" }}>
                   Home
                 </Link>
-                <Link className="nav-link" to="/about">
+                <Link
+                  className="nav-link"
+                  eventKey="link-1"
+                  to="/about"
+                  style={{ color: "#ff7552" }}
+                >
                   About
                 </Link>
-                <Link className="nav-link" to="/projects">
+                <Link
+                  className="nav-link"
+                  eventKey="link-2"
+                  to="/projects"
+                  style={{ color: "#ff7552" }}
+                >
                   Projects
                 </Link>
-                <Link className="nav-link" to="/contact">
+                <Link
+                  className="nav-link"
+                  eventKey="link-3"
+                  to="/contact"
+                  style={{ color: "#ff7552" }}
+                >
                   Contact me
                 </Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Route
-            path="/"
-            exact
-            render={() => (
-              <HomePage
-                title={this.state.home.title}
-                subTitle={this.state.home.subTitle}
-                text={this.state.home.text}
-              />
-            )}
-          />
-          <Route
-            path="/about"
-            exact
-            render={() => <AboutPage title={this.state.about.title} />}
-          />
-          <Route
-            path="/projects"
-            exact
-            render={() => <ProjectsPage title={this.state.projects.title} />}
-          />
-          <Route
-            path="/contact"
-            exact
-            render={() => <ContactPage title={this.state.contact.title} />}
-          />
-          <Footer />
+          <Switch>
+            <Route
+              path="/"
+              exact
+              render={() => (
+                <HomePage
+                  title={this.state.home.title}
+                  subTitle={this.state.home.subTitle}
+                  text={this.state.home.text}
+                />
+              )}
+            />
+            <Route
+              path="/about"
+              exact
+              render={() => <AboutPage title={this.state.about.title} />}
+            />
+            <Route
+              path="/projects"
+              exact
+              render={() => <ProjectsPage title={this.state.projects.title} />}
+            />
+            <Route
+              path="/contact"
+              exact
+              render={() => <ContactPage title={this.state.contact.title} />}
+            />
+          </Switch>
         </Container>
+        <Footer />
       </Router>
     );
   }

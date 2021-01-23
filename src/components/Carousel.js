@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Zoom from "react-reveal/Zoom";
 
 import Card from "./Card";
 import zshop from "../assets/images/zshop.jpg";
@@ -69,11 +70,13 @@ export default class Carousel extends Component {
   };
   render() {
     return (
-      <Container fluid={true}>
-        <Row className="justify-content-around">
-          {this.makeItems(this.state.items)}
-        </Row>
-      </Container>
+      <Zoom>
+        <Container fluid={true} className="carousel">
+          <Row className="justify-content-around">
+            {this.makeItems(this.state.items)}
+          </Row>
+        </Container>
+      </Zoom>
     );
   }
 }
