@@ -45,11 +45,11 @@ export default class App extends Component {
         <Container
           className="p-0 bkg"
           fluid={true}
-          style={{
-            backgroundImage: `url(${bckg})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat"
-          }}
+          // style={{
+          //   backgroundImage: `url(${bckg})`,
+          //   backgroundSize: "cover",
+          //   backgroundRepeat: "no-repeat"
+          // }}
         >
           <Navbar className="border-bottom" bg="transparent" expand="lg">
             <Navbar.Brand>Mohamed Sobh</Navbar.Brand>
