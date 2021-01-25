@@ -4,7 +4,8 @@ import CardInfo from "./CardInfo";
 function Card(props) {
   return (
     <div
-      className="d-inline-block g-card"
+      className="d-inline-block  g-card"
+      style={{ display: "flex" }}
       onClick={e => props.click(props.item)}
     >
       <img

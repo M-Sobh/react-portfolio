@@ -6,13 +6,15 @@ function CardInfo(props) {
     <animated.div className="g-card-info" style={style}>
       <p className="g-card-title">{props.title}</p>
       <p className="g-card-sub-title">{props.subTitle}</p>
-      <a href={props.link} target="_blank" rel="noopener noreferrer">
-        code
-      </a>
-      <br />
-      <a href={props.demo} target="_blank" rel="noopener noreferrer">
-        demo
-      </a>
+      <div className="demo-link">
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
+          code
+        </a>
+        <br />
+        {/* <a href={props.demo} target="_blank" rel="noopener noreferrer">
+          demo
+        </a> */}
+      </div>
     </animated.div>
   );
 }
