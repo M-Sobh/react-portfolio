@@ -18,7 +18,14 @@ code {
     monospace;
 }
 
+/* styling navbar */
+
+.nav-link {
+  font-size: 1.5rem;
+}
+
 /* styling projects page */
+
 .g-card {
   margin: 20px;
 }
@@ -27,6 +34,7 @@ code {
   width: 20vw;
   height: 45vh;
   box-shadow: 0px 0px 3px 1px #ff7552;
+  cursor: pointer;
 }
 .g-card-info {
   margin-top: 10px;
@@ -47,8 +55,27 @@ code {
   margin: 0 auto;
   float: none;
   margin-bottom: 10px;
-  margin-top: 250px;
+  margin-top: 2rem;
 }
+
+.demo-link a {
+  color: #ff7552 !important;
+  display: inline-block;
+}
+.carousel {
+  padding-top: 10em;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: #ff7552;
+  text-align: center;
+}
+
+/* mail sending style  */
 .success-msg {
   color: #57a773;
   padding: 10px 15px;
@@ -58,17 +85,10 @@ code {
   padding: 10px 15px;
 }
 
-a {
-  color: #ff7552 !important;
-}
-.carousel {
-  padding-top: 10em;
-}
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #343a40;
-  color: white;
-  text-align: center;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #ff7552 !important;
+  border-radius: 1.5rem !important;
 }

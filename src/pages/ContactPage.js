@@ -70,6 +70,7 @@ export default class ContactPage extends Component {
                   <Card.Title>
                     <Hero title={this.props.title} />
                   </Card.Title>
+                  <hr />
                   <Content>
                     <Form onSubmit={this.handleSubmit}>
                       <Form.Group>
@@ -123,6 +124,12 @@ export default class ContactPage extends Component {
                         </p>
                       )}
                     </Form>
+                    <hr />
+                    <div>
+                      <h2>Or, simply reach me directly!</h2>
+                      <h4>E-mail : eng.m_sobhe@yahoo.com</h4>
+                      <h4> Mob. : (+44) 07862 698820</h4>
+                    </div>
                   </Content>
                 </Card.Body>
               </Card>

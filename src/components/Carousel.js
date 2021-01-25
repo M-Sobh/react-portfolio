@@ -71,7 +71,7 @@ export default class Carousel extends Component {
   render() {
     return (
       <Zoom>
-        <Container fluid={true} className="carousel">
+        <Container fluid={true}>
           <Row className="justify-content-around">
             {this.makeItems(this.state.items)}
           </Row>

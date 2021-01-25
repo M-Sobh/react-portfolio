@@ -10,7 +10,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ContactPage from "./pages/ContactPage";
-import logo from "./assets/images/logo.jpeg";
+import logo from "./assets/images/logo.png";
 import Switch from "react-bootstrap/esm/Switch";
 
 export default class App extends Component {
@@ -26,8 +26,8 @@ export default class App extends Component {
       ],
       home: {
         title: "Be Persistent",
-        subTitle: "Projects that make difference",
-        text: "Check out my projects"
+        subTitle: "Projects that make difference.",
+        text: "Want to see my work ?!! "
       },
       about: {
         title: "About me"
@@ -54,14 +54,14 @@ export default class App extends Component {
               <img
                 alt="logo"
                 src={logo}
-                width="60"
-                height="50"
+                width="250"
+                height="55"
                 className="d-inline-block align-top"
               />
             </Navbar.Brand>
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
             <Navbar.Collapse id="navbar-toggle">
-              <Nav className="ml-auto" variant="tabs" defaultActiveKey="/home">
+              <Nav className="ml-auto" variant="" defaultActiveKey="/home">
                 <Link className="nav-link" to="/" style={{ color: "#ff7552" }}>
                   Home
                 </Link>
@@ -120,8 +120,9 @@ export default class App extends Component {
               render={() => <ContactPage title={this.state.contact.title} />}
             />
           </Switch>
+
+          <Footer />
         </Container>
-        <Footer />
       </Router>
     );
   }
