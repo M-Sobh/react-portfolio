@@ -19,8 +19,7 @@ export default class Carousel extends Component {
           subTitle: "e-commerce shop",
           imgSrc: zshop,
           link: "https://github.com/M-Sobh/shopping-cart.git",
-          //   demo needs to be filled
-          demo: "",
+          demo: "https://zdress.netlify.app",
           selected: false
         },
         {
@@ -29,7 +28,7 @@ export default class Carousel extends Component {
           subTitle: "Memory game",
           imgSrc: flipcard,
           link: "https://github.com/M-Sobh/card_game.git",
-          demo: "",
+          demo: "https://matchcards.netlify.app",
           selected: false
         },
         {
@@ -38,7 +37,7 @@ export default class Carousel extends Component {
           subTitle: "Currency converter",
           imgSrc: currency,
           link: "https://github.com/M-Sobh/currency-converter.git",
-          demo: "",
+          demo: "https://urwallet.netlify.app",
           selected: false
         }
       ]
